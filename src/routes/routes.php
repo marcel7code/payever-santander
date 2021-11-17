@@ -1,6 +1,6 @@
 <?php
 
-use Illuminate\Routing\Route;
+use Illuminate\Support\Facades\Route;
 
 Route::group(['namespace' => 'Payever\Santander\Controllers'], function () {
     Route::get('santander-payment/test', 'PaymentController@test');
