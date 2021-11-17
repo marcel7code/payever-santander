@@ -1,0 +1,29 @@
+{
+  "name": "payever/santander",
+  "description": "This package is for making payments with payever - santander",
+  "type": "library",
+  "license": "MIT",
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=7.4",
+    "laravel/framework": "^8.53.1",
+    "guzzlehttp/guzzle": "^7.3.0",
+    "ext-json": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Payever\\Santander\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Payever\\Santander\\SantanderServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "sort-packages": true,
+    "prefer-stable": true
+  }
+}
